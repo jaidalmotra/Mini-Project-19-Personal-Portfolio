@@ -1,0 +1,386 @@
+* {
+    margin: 0.5px;
+    padding: 1px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(148, 154, 154);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+nav {
+    /*making Nav as a flex box*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 47px;
+    background-color: rgb(3, 12, 52);
+}
+
+.left {
+    font-size: 1.4rem;
+}
+
+.right {
+    font-size: 0.8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(148, 154, 154);
+}
+
+nav ul li a:hover {
+    color: rgb(36, 228, 58);
+    font-size: 0.9rem;
+}
+
+
+/* .firstsection {
+    display: flex;
+    justify-content: space-around;
+    background:url(WallpaperDog-473866.jpg);
+    background-size:cover;
+    height: 150vh; /* Set the height to 100vh (100% of the viewport height) */
+    /* WIDTH:100%;
+} */ 
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    background: url(WallpaperDog-473866.jpg);
+    background-size: cover;
+    background-position: center center; /* Center the background image */
+    height: 100vh;
+}
+
+.firstsection>div {
+    width: 45%;
+
+}
+
+.leftsection {
+    padding: 20px 0 0 70px;
+    font-size: 2.3rem;
+    margin: 50px 0;
+}
+
+.button
+{
+    padding:6px 12px;
+    margin:0.5em 0;
+    background-color: #9a075a;
+    color:#afa6a6;
+    font-weight:bold;
+    BORDER:none;
+    outline: none;
+    cursor:pointer;
+}
+
+
+.rightsection img {
+    padding-top:40px;
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    /* Media query for smaller screen sizes */
+    .firstsection {
+        flex-direction: column; /* Stack the divs vertically */
+        align-items: flex-start; /* Align the content to the start */
+    }
+
+    .firstsection > div {
+        width: 100%; /* Make the div full width */
+        padding: 0 15px; /* Adjust the horizontal padding */
+    }
+}
+
+.purple {
+    color: rgb(28, 198, 198);
+}
+
+.text-gray {
+    color: rgb(28, 198, 198);
+    font-family: cursive;
+    
+}
+
+#element {
+    color: rgb(28, 198, 198)
+}
+.second{
+    margin:0;
+    padding:0; 
+    background:url(javier-haro-SHp9qZmwC6w-unsplash.jpg);
+    background-size:cover;
+}
+
+.secondsection {
+    max-width: 85vw;
+    margin: auto;
+    height:fit-content;
+    padding-top: 30px;
+   
+}
+
+.secondsection h1 {
+    font-size: 1.5rem;
+    background-color: rgb(13, 6, 52);
+    width: 90vw;
+
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(109, 109, 109);
+    margin: 10px;
+
+}
+
+.about{
+    display:flex;
+    justify-content: space-around;
+    color: rgb(180, 180, 180);
+}
+.about>div{
+    width:45%
+}
+
+.left2 img {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.right2{
+    padding: 0;
+    font-size: 0.77rem;
+    margin: 50px 0;
+
+}
+
+.head{
+    text-decoration: solid;
+    color: rgb(28, 198, 198);
+    font-size:1rem;
+}
+
+.thirdsection{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(166, 171, 175);;
+}
+
+.thirdsection h1 {
+    font-size: 2rem;
+    /* background-color: rgb(13, 6, 52); */
+    width: 85vw;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align:center;
+    color:rgb(166, 171, 175);
+    padding-bottom: 30px;
+}
+
+
+.contact{
+    position:absolute;
+    min-height:100vh;
+    padding:20px 80px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background:url(wallpaperflare.com_wallpaper\ \(2\).jpg);
+    background-size:cover;
+}
+
+.contact .content{
+    max-width:800px;
+    text-align:center;
+}
+
+.contact .content h2{
+    font-size:36px;
+    font-weight:500;
+    color:#afa6a6
+}
+
+.contact .content p{
+    font-weight:3S00;
+    color:rgb(166, 171, 175);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+
+
+.container .contactinfo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.container .contactinfo .box{
+    position:relative;
+    padding:20px 0;
+    display:flex;
+
+}
+
+.container .contactinfo .box .icon{
+    min-width:60px;
+    height:60px;
+   /* background:#fff; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size:22px;
+}
+
+.container .contactinfo .box .text{
+    display:flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:rgb(166, 171, 175);;
+    flex-direction:column;
+    font-weight:300;
+
+
+}
+
+.container .contactinfo .box .text
+{
+    display:flex;
+    margin-left:20px;
+    font-size:16px;
+    color:rgb(166, 171, 175);;
+    flex-direction:column;
+    font-weight:300;
+}
+
+.container .contactinfo .box .text h3
+{
+    font-weight:500;
+    color:#00bcd4;
+}
+
+.contactform
+{
+    width:40%;
+    padding:40px;
+    /* background:#fff; */
+}
+
+.contactform h2{
+    font-size:30px;
+    color:rgb(166, 171, 175);;
+    font-weight:500;
+}
+
+.contactform .inputBox
+{
+    position:relative;
+    width:100%;
+    margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    width:100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+
+.contactform .inputBox span{
+    position:absolute;
+    Left:0;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    pointer-events:none;
+    transition:0.5s;
+    color:#666;
+}
+
+.contactform .inputBox input:focus ~span,
+.contactform .inputBox input:valid ~span,
+.contactform .inputBox textarea:focus ~span,
+.contactform .inputBox textarea:valid ~span
+{
+    color:#e91e63;
+    font-size:12px;
+    transform:translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background:#00bcd4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    
+}
+
+.error-message {
+    color: #ff5757;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+@media (max-width:991px)
+{
+    .contact
+    {
+        padding:50px;
+    }
+
+    .container
+    {
+        flex-direction: column;
+    }
+
+    .container .contactinfo
+    {
+        margin-bottom:40px;
+    }
+
+    .container .contactinfo,
+    .contactform
+    {
+        width:100%;
+    }
+}
